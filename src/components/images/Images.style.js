@@ -14,5 +14,5 @@ export const AnimatedLOGO = styled.img`
   height: 40vmin;
   margin: 0 auto;
   pointer-events: none;
-  animation: ${rotate} infinite 10s linear;
+  animation: ${rotate} infinite 5s linear;
 `
