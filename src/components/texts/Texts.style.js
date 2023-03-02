@@ -6,6 +6,11 @@ export const TextWrapper = styled.header`
   // Destructuring Props;
   cursor: ${({ cursor }) => cursor};
   padding: 40px 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 50px;
 `;
 
 export const H1 = styled.h1`
