@@ -46,3 +46,17 @@ export const SubmitButton = styled(Button).attrs({ type: "submit" })`
       props.variant !== "outlined" ? "white" : "green"};
   }
 `;
+
+export const ModeButton = styled(Button)`
+  background-color: ${({ theme }) => (theme.mode ? "black" : "white")};
+  color: ${({ theme }) => (theme.mode ? "white" : "black")};
+  border-color: ${({ theme }) => (theme.mode ? "white" : "black")};
+  transition: all 0.1s;
+
+  &:hover {
+    background-color: ${({ theme }) =>
+      theme.mode ? "black" : "white"};
+    color: ${({ theme }) => (theme.mode ? "white" : "black")};
+    border-color: ${({ theme }) => (theme.mode ? "white" : "black")};
+  }
+`;
